@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  tet:
+    image: tet_programming
+    hostname: prog
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    volumes:
+      - ./code:/root/code
